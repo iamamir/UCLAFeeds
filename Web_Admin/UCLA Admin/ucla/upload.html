@@ -1,0 +1,56 @@
+<div class="container-fluid uploadScreen">
+<div class="row upload-title text-center">
+<div class="col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-offset-3 col-xs-6   col-lg-offset-4 col-lg-4">
+<h1> Upload File </h1>
+</div>
+</div>
+
+<div class="row browse-file text-center" ng-init="excelDataExtractor()">
+<div class="col-md-offset-2 col-md-9 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12 col-lg-offset-2 col-lg-8">
+
+<div class="row">
+<div class="col-md-3 col-sm-3 col-xs-3 col-lg-3 browse-file-btn">
+<div class="browse"><p> Browse</p></div><input type="file" accept=".xls,.xlsx" name="xlfile" id="xlf" file-model="myFile" required />
+</div>
+<div class="col-md-offset-0 col-md-5  col-sm-offset-1 col-sm-5 col-xs-offset-1 col-xs-4 col-lg-5 file-path">
+<center>
+<p>{{filePath}}</p>
+</center>
+</div>
+<div class="col-md-4 col-sm-3 col-xs-4 col-lg-4 upload">
+<button class="upload-btn" ng-disabled="isDisabled" ng-click="uploadExcelFileData()"></button>
+<p>Upload</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="row save-file text-center">
+<div class="col-md-offset-2 col-md-9 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12 col-lg-offset-2 col-lg-8">
+
+<div class="row">
+<div class="col-md-1 col-sm-1 col-xs-1 col-lg-1 excel-file-image">
+<img src="images/file.png"/> 
+</div>
+<div class="col-md-2 col-sm-2 col-xs-3 col-lg-2 excel-file-name">
+<p>{{fileName}}</p>
+</div>
+<div class="col-md-offset-0 col-md-5 col-sm-offset-1 col-sm-5 col-xs-offset-0 col-xs-4 col-lg-5 progressbarContainer">
+<div id="progressBar" class="progress_bar"></div>
+<div id="empty-progressBar" class="empty-progress_bar"></div>
+</div>
+<div class="col-md-4 col-sm-3 col-xs-4 col-lg-4 save-btn">
+<button class="save-button" ng-disabled="isSaveDisabled" ng-click="saveDataToDatabase()"></button>
+<!--<img src="images/save_btn.png" ng-click="saveDataToDatabase()"/>-->
+<p>Save</p>
+</div>
+</div>
+</div>
+</div>
+
+<div>
+<div mc-messages></div>
+</div>
+
+</div>

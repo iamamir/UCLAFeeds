@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>UCLA Admin Panel</title>
+
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/ngActivityIndicator.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<!--<link rel="stylesheet" href="css/login.css" />
+-->
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body ng-controller="HomeController">
+
+<header class="mainHeader text-center">
+	<a href="javascript:void(0);"><img src="images/logo1.png" height="79" /></a>
+	<div class="headerBlack text-right">
+    <div class="logout" ng-click="logout()" ng-if="logoutShowHide == true"><img src="images/logout.png"/>
+    <p>Logout</p>
+    </div>
+    </div>
+    <div class="headerLightBlack"></div>
+</header>
+
+<div ui-view=""></div>
+
+
+
+<script src="js/shim.js"></script>
+<script src="js/jszip.js"></script>
+<script src="js/xlsx.js"></script>
+<script src="js/ods.js"></script>
+<script src="js/angular.min.js" data-semver="1.3.8"></script>
+<script src="js/angular-animate.min.js" data-semver="1.3.8"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/message-center.js"></script>
+<script src="js/main.js"></script>
+<script src="js/model.js"></script>
+<script src="js/ngActivityIndicator.js"></script>
+<script src="js/mainController.js"></script>
+<script src="js/loginController.js"></script>
+<script src="js/excelController.js"></script>
+</body>
+</html>
