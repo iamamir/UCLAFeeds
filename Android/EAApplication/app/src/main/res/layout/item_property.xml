@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/news_bg">
+
+    <RelativeLayout
+        android:id="@+id/programcontainerpanel"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:paddingRight="5dp"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:id="@+id/design_layout_user_image"
+            android:textSize="29dp"
+            android:text="U"
+            android:background="@drawable/rounded_corner"
+            android:textColor="@color/White"
+            android:padding="22dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/item_email_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="SADAF 7"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginRight="30dp"
+            android:textColorHighlight="@color/material_blue_grey_800"
+            android:textColor="@android:color/white"
+            android:layout_toEndOf="@+id/design_layout_user_image" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/item_email_body"
+            android:layout_below="@+id/item_email_subject"
+            android:layout_alignStart="@+id/item_email_subject"
+            android:layout_alignEnd="@+id/item_email_subject"
+            android:maxLines="5"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/imgBtnFavourite"
+        android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+        android:src="@drawable/fav_icon"
+        android:background="@null" />
+
+
+</RelativeLayout>

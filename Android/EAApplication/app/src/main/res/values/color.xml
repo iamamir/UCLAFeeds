@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Transparent">#80000000</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="report_cross_bg_color">#BA2D2D</color>
+    <color name="facebook_bar_color">#30477A</color>
+    <color name="color1">#64a5bb</color>
+    <color name="color2">#698433</color>
+    <color name="color3">#cc5165</color>
+    <color name="color4">#ff8202</color>
+    <color name="color5">#da105c</color>
+
+    <color name="color6">#61aab1</color>
+
+    <color name="color7"> #a31C20</color>
+
+    <color name="color8">#a31C90</color>
+
+    <color name="color9">#b91d90</color>
+
+    <color name="color10">#c91d70</color>
+
+    <color name="color11"> #C82c3a</color>
+
+    <color name="color12">#0180b5</color>
+
+    <color name="color13">#ea3e70</color>
+
+    <color name="color14">#4bc4d5</color>
+
+    <color name="color15">#9471db</color>
+
+    <color name="color16">#71b84d</color>
+
+    <color name="color17">#e46161</color>
+
+    <color name="color18">#b46874</color>
+
+    <color name="color19">#dba962</color>
+    <color name="color20">#e7396e</color>
+
+    <color name="color21">#4a8e81</color>
+
+    <color name="color22">#da11ab</color>
+    <color name="color23">#11da11</color>
+
+    <color name="color24">#99ad99</color>
+    <color name="color25">#33b133</color>
+     <color name="color26">#11b199</color>
+
+
+
+
+    # S
+
+    # T
+
+    # U
+
+    # V
+
+    # W
+
+    # X
+
+    # Y
+
+    # Z
+
+</resources>

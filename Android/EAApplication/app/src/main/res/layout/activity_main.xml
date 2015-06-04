@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.netsoltech.realstate.activity.Activity_Login_Screen" >
+
+    <ImageView
+        android:id="@+id/activity_login_img_background"
+        android:layout_width="950dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" />
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.testapplicationandroid.MainActivity"
+    >
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/design_layout01"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/design_layout"
+        android:background="@drawable/header_bg">
+
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="23dp"
+            android:id="@+id/btn_logout"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/logout_icon1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:background="@drawable/news_fav_icon"
+            android:id="@+id/btnFavourites"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentStart="true" />
+
+        <com.netsol.utiliy.NDSpinner
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/osversions"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            style="@style/Base.Animation.AppCompat.DropDownUp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail Box"
+            android:id="@+id/selVersion"
+            android:layout_alignStart="@+id/osversions"
+             android:layout_alignEnd="@+id/osversions"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/White"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible"
+            style="@style/Animation.AppCompat.DropDownUp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/design_layout01"
+        android:layout_below="@+id/design_layout"
+        android:gravity="center"
+        android:background="@drawable/search_bg">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_main_editText_search"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="35dp"
+            android:textColor="@color/White"
+            android:hint="Search"
+            android:textColorHint="@color/White"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="33dp"
+            android:background="@drawable/search_icon"
+            android:id="@+id/btn_search"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tv_notification"
+        android:layout_below="@+id/design_layout01"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/White"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
+</FrameLayout>

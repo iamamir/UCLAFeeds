@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/design_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/header_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detail Page"
+            android:id="@+id/textView3"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="31dp"
+            android:layout_height="29dp"
+            android:id="@+id/button6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            android:background="@drawable/selector_logout_button"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/design_layout01"
+        android:background="@drawable/news_bg"
+        android:layout_below="@+id/design_layout"
+        android:layout_alignParentStart="true">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/design_layout_user_image"
+                android:textSize="29dp"
+                android:text="U"
+                android:background="@drawable/rounded_corner"
+                android:textColor="@color/White"
+                android:padding="18dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBtnFav"
+            android:src="@drawable/fav_icon"
+            android:layout_alignParentEnd="true"
+            android:background="@color/Transparent"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:maxLines="1"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/activity_detail_email_screen_tv_subject"
+            android:textColor="@color/White"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_toEndOf="@+id/design_layout_user_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/activity_detail_email_screen_tv_date_time"
+            android:layout_below="@+id/activity_detail_email_screen_tv_subject"
+            android:textColor="@color/White"
+            android:layout_alignStart="@+id/activity_detail_email_screen_tv_subject"
+            android:layout_marginTop="10dp" />
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/design_layout01"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/news_detail_bg">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/activity_detail_email_screen_detail_text_tv"
+            android:layout_below="@+id/design_layout01"
+            android:textColor="@color/White"
+            android:scrollbars = "vertical"
+            android:maxLines="50"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
